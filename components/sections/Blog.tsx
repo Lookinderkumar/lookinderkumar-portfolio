@@ -124,7 +124,7 @@ export default function Blog() {
 
   return (
     <section id="blog" className="py-16 bg-[#080D1A]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-8">
 
         {/* Section Heading */}
         <motion.div
@@ -177,7 +177,7 @@ export default function Blog() {
         )}
 
         {/* Regular cards grid */}
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <AnimatePresence mode="popLayout">
             {(activeTag === 'All' && searchQuery === '' ? nonFeaturedFiltered : filtered).map((post, i) => (
               <BlogCard key={post.id} post={post} index={i} />

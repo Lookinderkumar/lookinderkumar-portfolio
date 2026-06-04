@@ -22,7 +22,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       className={`bg-[#0D1424] rounded-2xl border border-[#1E2D40] overflow-hidden flex flex-col hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)] ${project.comingSoon ? 'opacity-70' : ''}`}
     >
       {/* Image area */}
-      <div className="relative h-44 bg-gradient-to-br from-[#0D1424] to-[#1a1f35] flex items-center justify-center flex-shrink-0">
+      <div className="relative h-40 bg-gradient-to-br from-[#0D1424] to-[#1a1f35] flex items-center justify-center flex-shrink-0">
         <span className="text-6xl font-bold font-display text-[#0EA5E9]/20 select-none">
           {project.initial}
         </span>
@@ -47,7 +47,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       </div>
 
       {/* Card body */}
-      <div className="p-5 flex flex-col flex-1">
+      <div className="p-4 flex flex-col flex-1">
         {/* Category pill */}
         <div className="mb-3">
           <span className="text-xs font-medium text-[#0EA5E9] border border-[#0EA5E9]/30 bg-[#0EA5E9]/10 px-2.5 py-1 rounded-full">
@@ -61,7 +61,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         </h3>
 
         {/* Description */}
-        <p className="text-[#94A3B8] text-sm leading-6 mb-4 flex-1">
+        <p className="text-[#94A3B8] text-sm leading-6 mb-4 flex-1 line-clamp-3">
           {project.description}
         </p>
 
@@ -123,7 +123,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-16 bg-[#080D1A]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-8">
 
         {/* Section Heading */}
         <motion.div
@@ -174,7 +174,7 @@ export default function Projects() {
         </div>
 
         {/* Project Cards Grid */}
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <AnimatePresence mode="popLayout">
             {filtered.map((project, i) => (
               <ProjectCard key={project.id} project={project} index={i} />

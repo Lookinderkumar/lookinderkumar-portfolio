@@ -39,7 +39,7 @@ function SkillCard({ category, skills, icon: Icon, index }: {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-5 sm:p-6 hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)]"
+      className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-4 hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)]"
     >
       {/* Card Header */}
       <div className="flex items-center gap-3 mb-6">
@@ -62,7 +62,7 @@ function SkillCard({ category, skills, icon: Icon, index }: {
 export default function Skills() {
   return (
     <section id="skills" className="py-16 bg-[#080D1A]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-8">
 
         {/* Section Heading */}
         <motion.div
@@ -81,7 +81,7 @@ export default function Skills() {
         </motion.div>
 
         {/* 3-column grid — matches reference exactly */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {skillsData.map((item, i) => (
             <SkillCard
               key={item.category}

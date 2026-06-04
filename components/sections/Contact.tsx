@@ -35,7 +35,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-16 bg-[#080D1A]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-8">
 
         {/* Heading */}
         <motion.div
