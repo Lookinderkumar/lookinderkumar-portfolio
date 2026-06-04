@@ -46,7 +46,7 @@ function CountUp({ target, suffix }: { target: number; suffix: string }) {
 export default function About() {
   return (
     <section id="about" className="py-16 bg-[#080D1A]">
-      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* Section Heading */}
         <motion.div
@@ -65,7 +65,7 @@ export default function About() {
         </motion.div>
 
         {/* Two Column Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-6 mt-10 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10 items-start">
 
           {/* LEFT — Profile Card */}
           <motion.div
@@ -73,7 +73,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-8 text-center flex flex-col items-center justify-center hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(14,165,233,0.08)]"
+            className="lg:col-span-1 self-start bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-8 text-center flex flex-col items-center justify-center hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(14,165,233,0.08)]"
           >
             <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-gradient-to-br from-[#1a2744] via-[#2d1b69] to-[#3b0764] flex items-center justify-center border-2 border-[#0EA5E9]/40 shadow-[0_0_20px_rgba(14,165,233,0.15)]">
               <span className="text-4xl sm:text-5xl font-bold font-display text-[#7DD3FC]">LK</span>
@@ -96,7 +96,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-6 sm:p-8 lg:p-10 hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(14,165,233,0.08)]"
+            className="lg:col-span-2 bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-6 sm:p-8 lg:p-10 hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(14,165,233,0.08)]"
           >
             <h3 className="text-xl sm:text-2xl font-bold font-display text-[#F1F5F9] border-l-4 border-[#0EA5E9] pl-4 mb-6">
               My Story
