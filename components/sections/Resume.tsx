@@ -72,7 +72,7 @@ function TimelineItem({
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: index * 0.1 }}
-        className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-6 mb-6 flex-1 hover:border-[#0EA5E9]/40 transition-all duration-300"
+        className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-5 mb-4 flex-1 hover:border-[#0EA5E9]/40 transition-all duration-300"
       >
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
           <h3 className="text-base font-bold font-display text-[#F1F5F9]">{title}</h3>
@@ -101,7 +101,7 @@ function TimelineItem({
 
 function SectionHeader({ icon: Icon, title, color }: { icon: React.ElementType; title: string; color: string }) {
   return (
-    <div className="flex items-center gap-3 mb-8">
+    <div className="flex items-center gap-3 mb-6">
       <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
         style={{ backgroundColor: `${color}15`, border: `1px solid ${color}30` }}>
         <Icon className="w-5 h-5" style={{ color }} />
@@ -113,7 +113,7 @@ function SectionHeader({ icon: Icon, title, color }: { icon: React.ElementType; 
 
 export default function Resume() {
   return (
-    <section id="resume" className="py-20 sm:py-24 bg-[#080D1A]">
+    <section id="resume" className="py-16 bg-[#080D1A]">
       <div className="max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* Section Heading */}
@@ -124,7 +124,7 @@ export default function Resume() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold font-display bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl font-bold font-display bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] bg-clip-text text-transparent">
             Resume
           </h2>
           <p className="text-[#94A3B8] text-sm sm:text-base mt-3">

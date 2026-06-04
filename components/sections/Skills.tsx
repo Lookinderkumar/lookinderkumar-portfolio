@@ -39,14 +39,14 @@ function SkillCard({ category, skills, icon: Icon, index }: {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-6 sm:p-8 hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)]"
+      className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-5 sm:p-6 hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)]"
     >
       {/* Card Header */}
       <div className="flex items-center gap-3 mb-6">
         <div className="w-10 h-10 rounded-xl bg-[#0EA5E9]/10 border border-[#0EA5E9]/20 flex items-center justify-center flex-shrink-0">
           <Icon className="w-5 h-5 text-[#0EA5E9]" />
         </div>
-        <h3 className="text-lg font-bold font-display text-[#F1F5F9]">{category}</h3>
+        <h3 className="text-base font-bold font-display text-[#F1F5F9]">{category}</h3>
       </div>
 
       {/* Skill Bars */}
@@ -61,7 +61,7 @@ function SkillCard({ category, skills, icon: Icon, index }: {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 sm:py-24 bg-[#080D1A]">
+    <section id="skills" className="py-16 bg-[#080D1A]">
       <div className="max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* Section Heading */}
@@ -72,7 +72,7 @@ export default function Skills() {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold font-display bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl font-bold font-display bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] bg-clip-text text-transparent">
             Skills &amp; Tech Stack
           </h2>
           <p className="text-[#94A3B8] text-sm sm:text-base mt-3">

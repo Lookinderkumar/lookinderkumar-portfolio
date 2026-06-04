@@ -55,14 +55,14 @@ export default function Hero() {
       <ParticleCanvas />
 
       <motion.div
-        className="relative z-10 max-w-3xl mx-auto text-center flex flex-col items-center gap-10 px-6"
+        className="relative z-10 max-w-2xl mx-auto text-center flex flex-col items-center gap-6 px-6"
         initial="initial"
         animate="animate"
         transition={{ staggerChildren: 0.15 }}
       >
         {/* Status badge */}
         <motion.div variants={fadeUp} transition={{ duration: 0.5 }}>
-          <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#0EA5E9]/40 bg-[#0EA5E9]/10 text-[#94A3B8] text-base md:text-lg">
+          <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#0EA5E9]/40 bg-[#0EA5E9]/10 text-[#94A3B8] text-sm md:text-base">
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
             Open to Opportunities
           </span>
@@ -72,7 +72,7 @@ export default function Hero() {
         <motion.h1
           variants={fadeUp}
           transition={{ duration: 0.5 }}
-          className="font-bold leading-tight whitespace-nowrap text-5xl md:text-6xl lg:text-7xl"
+          className="font-bold leading-tight whitespace-nowrap text-4xl md:text-5xl lg:text-5xl xl:text-6xl"
         >
           <span className="text-white">Hi, I&apos;m </span>
           <span className="bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] bg-clip-text text-transparent">
@@ -84,7 +84,7 @@ export default function Hero() {
         <motion.div
           variants={fadeUp}
           transition={{ duration: 0.5 }}
-          className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#0EA5E9] min-h-[3rem] flex items-center justify-center"
+          className="text-xl md:text-2xl lg:text-3xl font-semibold text-[#0EA5E9] min-h-[2.5rem] flex items-center justify-center"
         >
           <span>{displayed}</span>
         </motion.div>
@@ -93,7 +93,7 @@ export default function Hero() {
         <motion.p
           variants={fadeUp}
           transition={{ duration: 0.5 }}
-          className="text-xl md:text-2xl text-[#94A3B8] max-w-2xl mx-auto leading-relaxed text-center"
+          className="text-base md:text-lg text-[#94A3B8] max-w-2xl mx-auto leading-relaxed text-center"
         >
           Building intelligent systems at the intersection of AI, data, and regulated industries.
         </motion.p>
@@ -103,14 +103,14 @@ export default function Hero() {
           <a
             href="#projects"
             onClick={(e) => { e.preventDefault(); document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' }) }}
-            className="px-14 py-3 text-lg font-semibold rounded-lg text-white bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] hover:opacity-90 hover:scale-105 transition-all duration-200"
+            className="px-8 py-2.5 text-base font-semibold rounded-lg text-white bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] hover:opacity-90 hover:scale-105 transition-all duration-200"
           >
             View My Work
           </a>
           <a
             href="/Lookinder_Kumar_CV.pdf"
             download
-            className="px-14 py-3 text-lg font-semibold rounded-lg bg-[#0D1426] text-white border border-[#1E293B] hover:border-[#0EA5E9] transition-all duration-200"
+            className="px-8 py-2.5 text-base font-semibold rounded-lg bg-[#0D1426] text-white border border-[#1E293B] hover:border-[#0EA5E9] transition-all duration-200"
           >
             Download CV
           </a>
@@ -122,31 +122,31 @@ export default function Hero() {
             href="https://github.com/Lookinderkumar"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 rounded-xl bg-[#0D1426] border border-[#1E293B] hover:border-[#0EA5E9]/50 text-[#94A3B8] hover:text-[#0EA5E9] transition-all duration-200"
+            className="p-3 rounded-xl bg-[#0D1426] border border-[#1E293B] hover:border-[#0EA5E9]/50 text-[#94A3B8] hover:text-[#0EA5E9] transition-all duration-200"
           >
-            <FaGithub className="text-2xl" />
+            <FaGithub className="text-xl" />
           </a>
           <a
             href="https://linkedin.com/in/lookinder-kumar"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 rounded-xl bg-[#0D1426] border border-[#1E293B] hover:border-[#0EA5E9]/50 text-[#94A3B8] hover:text-[#0EA5E9] transition-all duration-200"
+            className="p-3 rounded-xl bg-[#0D1426] border border-[#1E293B] hover:border-[#0EA5E9]/50 text-[#94A3B8] hover:text-[#0EA5E9] transition-all duration-200"
           >
-            <FaLinkedin className="text-2xl" />
+            <FaLinkedin className="text-xl" />
           </a>
           <a
             href="https://twitter.com/lookinderkumar"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 rounded-xl bg-[#0D1426] border border-[#1E293B] hover:border-[#0EA5E9]/50 text-[#94A3B8] hover:text-[#0EA5E9] transition-all duration-200"
+            className="p-3 rounded-xl bg-[#0D1426] border border-[#1E293B] hover:border-[#0EA5E9]/50 text-[#94A3B8] hover:text-[#0EA5E9] transition-all duration-200"
           >
-            <FaXTwitter className="text-2xl" />
+            <FaXTwitter className="text-xl" />
           </a>
           <a
             href="mailto:lookinderkumar2011@gmail.com"
-            className="p-4 rounded-xl bg-[#0D1426] border border-[#1E293B] hover:border-[#0EA5E9]/50 text-[#94A3B8] hover:text-[#0EA5E9] transition-all duration-200"
+            className="p-3 rounded-xl bg-[#0D1426] border border-[#1E293B] hover:border-[#0EA5E9]/50 text-[#94A3B8] hover:text-[#0EA5E9] transition-all duration-200"
           >
-            <FaEnvelope className="text-2xl" />
+            <FaEnvelope className="text-xl" />
           </a>
         </motion.div>
       </motion.div>

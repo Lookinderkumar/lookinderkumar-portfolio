@@ -47,7 +47,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       </div>
 
       {/* Card body */}
-      <div className="p-6 flex flex-col flex-1">
+      <div className="p-5 flex flex-col flex-1">
         {/* Category pill */}
         <div className="mb-3">
           <span className="text-xs font-medium text-[#0EA5E9] border border-[#0EA5E9]/30 bg-[#0EA5E9]/10 px-2.5 py-1 rounded-full">
@@ -56,7 +56,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         </div>
 
         {/* Title */}
-        <h3 className="text-base font-bold font-display text-[#F1F5F9] mb-2 leading-snug">
+        <h3 className="text-sm font-bold font-display text-[#F1F5F9] mb-2 leading-snug">
           {project.title}
         </h3>
 
@@ -122,7 +122,7 @@ export default function Projects() {
   })
 
   return (
-    <section id="projects" className="py-20 sm:py-24 bg-[#080D1A]">
+    <section id="projects" className="py-16 bg-[#080D1A]">
       <div className="max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* Section Heading */}
@@ -133,7 +133,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold font-display text-[#0EA5E9]">
+          <h2 className="text-3xl sm:text-4xl font-bold font-display text-[#0EA5E9]">
             Projects
           </h2>
           <p className="text-[#94A3B8] text-sm sm:text-base mt-3">

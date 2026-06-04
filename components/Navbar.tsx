@@ -67,7 +67,7 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="/"
-            className="mr-auto font-bold text-2xl lg:text-3xl bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] bg-clip-text text-transparent"
+            className="mr-auto font-bold text-xl lg:text-2xl bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] bg-clip-text text-transparent"
           >
             LK
           </a>
@@ -81,7 +81,7 @@ export default function Navbar() {
                 onClick={(e) => {
                   if (!link.isPage) { e.preventDefault(); handleNavClick(link.href, false) }
                 }}
-                className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 ${
+                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 ${
                   isActive(link)
                     ? 'text-[#0EA5E9] bg-[#0EA5E9]/15'
                     : 'text-[#94A3B8] hover:text-white hover:bg-white/5'

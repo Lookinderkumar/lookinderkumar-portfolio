@@ -34,7 +34,7 @@ export default function Contact() {
   const inputClass = "w-full bg-[#0D1424] border border-[#1E2D40] rounded-xl px-4 py-3 text-[#F1F5F9] text-sm placeholder-[#4B5563] focus:outline-none focus:border-[#0EA5E9]/60 transition-colors"
 
   return (
-    <section id="contact" className="py-20 sm:py-24 bg-[#080D1A]">
+    <section id="contact" className="py-16 bg-[#080D1A]">
       <div className="max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-10">
 
         {/* Heading */}
@@ -45,7 +45,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold font-display bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl font-bold font-display bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] bg-clip-text text-transparent">
             Get in Touch
           </h2>
           <p className="text-[#94A3B8] text-sm sm:text-base mt-3">
