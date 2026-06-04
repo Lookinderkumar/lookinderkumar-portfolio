@@ -46,7 +46,7 @@ function CountUp({ target, suffix }: { target: number; suffix: string }) {
 export default function About() {
   return (
     <section id="about" className="py-16 bg-[#080D1A]">
-      <div className="max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-10">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
 
         {/* Section Heading */}
         <motion.div
@@ -65,7 +65,7 @@ export default function About() {
         </motion.div>
 
         {/* Two Column Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-6 mt-14 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-6 mt-10 items-stretch">
 
           {/* LEFT — Profile Card */}
           <motion.div

@@ -124,7 +124,7 @@ export default function Blog() {
 
   return (
     <section id="blog" className="py-16 bg-[#080D1A]">
-      <div className="max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-10">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
 
         {/* Section Heading */}
         <motion.div

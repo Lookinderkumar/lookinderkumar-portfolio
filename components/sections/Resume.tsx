@@ -114,7 +114,7 @@ function SectionHeader({ icon: Icon, title, color }: { icon: React.ElementType; 
 export default function Resume() {
   return (
     <section id="resume" className="py-16 bg-[#080D1A]">
-      <div className="max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-10">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
 
         {/* Section Heading */}
         <motion.div

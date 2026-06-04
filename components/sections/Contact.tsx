@@ -35,7 +35,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-16 bg-[#080D1A]">
-      <div className="max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-10">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
 
         {/* Heading */}
         <motion.div
@@ -54,7 +54,7 @@ export default function Contact() {
         </motion.div>
 
         {/* Two column layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-6 items-start">
 
           {/* LEFT — Info panel */}
           <motion.div

@@ -22,7 +22,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       className={`bg-[#0D1424] rounded-2xl border border-[#1E2D40] overflow-hidden flex flex-col hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)] ${project.comingSoon ? 'opacity-70' : ''}`}
     >
       {/* Image area */}
-      <div className="relative h-44 bg-gradient-to-br from-[#0D1424] to-[#1a1f35] flex items-center justify-center flex-shrink-0">
+      <div className="relative h-36 bg-gradient-to-br from-[#0D1424] to-[#1a1f35] flex items-center justify-center flex-shrink-0">
         <span className="text-6xl font-bold font-display text-[#0EA5E9]/20 select-none">
           {project.initial}
         </span>
@@ -123,7 +123,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-16 bg-[#080D1A]">
-      <div className="max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-10">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
 
         {/* Section Heading */}
         <motion.div
