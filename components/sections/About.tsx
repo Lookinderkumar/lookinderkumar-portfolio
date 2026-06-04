@@ -75,10 +75,10 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-8 text-center flex flex-col items-center justify-center hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(14,165,233,0.08)]"
           >
-            <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-[#1a2744] via-[#2d1b69] to-[#3b0764] flex items-center justify-center border-2 border-[#0EA5E9]/40 shadow-[0_0_20px_rgba(14,165,233,0.15)]">
-              <span className="text-3xl sm:text-4xl font-bold font-display text-[#7DD3FC]">LK</span>
+            <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-gradient-to-br from-[#1a2744] via-[#2d1b69] to-[#3b0764] flex items-center justify-center border-2 border-[#0EA5E9]/40 shadow-[0_0_20px_rgba(14,165,233,0.15)]">
+              <span className="text-4xl sm:text-5xl font-bold font-display text-[#7DD3FC]">LK</span>
             </div>
-            <p className="text-base sm:text-lg font-bold font-display text-[#F1F5F9] mt-6">Lookinder Kumar</p>
+            <p className="text-lg sm:text-xl font-bold font-display text-[#F1F5F9] mt-6">Lookinder Kumar</p>
             <p className="text-[#0EA5E9] text-sm sm:text-base mt-1.5">AI Engineer &amp; MSc Student</p>
             <div className="flex items-center justify-center gap-1.5 text-[#94A3B8] text-xs sm:text-sm mt-3">
               <MapPin className="w-3.5 h-3.5" />
@@ -103,7 +103,7 @@ export default function About() {
             </h3>
             <div className="space-y-5">
               {bio.map((para, i) => (
-                <p key={i} className="text-[#94A3B8] text-[15px] sm:text-base leading-7">{para}</p>
+                <p key={i} className="text-[#94A3B8] text-base leading-7">{para}</p>
               ))}
             </div>
           </motion.div>
@@ -123,7 +123,7 @@ export default function About() {
                 className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-6 sm:p-8 text-center hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)]"
               >
                 <Icon className="w-6 h-6 sm:w-7 sm:h-7 mx-auto text-[#0EA5E9] mb-3" />
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold font-display text-[#0EA5E9]">
+                <div className="text-3xl sm:text-3xl lg:text-4xl font-bold font-display text-[#0EA5E9]">
                   <CountUp target={stat.value} suffix={stat.suffix} />
                 </div>
                 <p className="text-[#94A3B8] text-xs sm:text-sm mt-2">{stat.label}</p>
