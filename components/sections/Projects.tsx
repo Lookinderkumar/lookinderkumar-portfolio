@@ -23,9 +23,13 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
     >
       {/* Image area */}
       <div className="relative h-40 bg-gradient-to-br from-[#0D1424] to-[#1a1f35] flex items-center justify-center flex-shrink-0">
-        <span className="text-6xl font-bold font-display text-[#0EA5E9]/20 select-none">
-          {project.initial}
-        </span>
+        {project.imageUrl ? (
+          <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover" />
+        ) : (
+          <span className="text-6xl font-bold font-display text-[#0EA5E9]/20 select-none">
+            {project.initial}
+          </span>
+        )}
         {project.featured && (
           <div className="absolute top-3 right-3 flex items-center gap-1.5 bg-[#7C3AED] text-white text-xs font-medium px-3 py-1 rounded-full">
             <Star className="w-3 h-3 fill-white" />
