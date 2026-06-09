@@ -82,10 +82,18 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         {/* Footer actions */}
         <div className="flex items-center justify-between pt-4 border-t border-[#1E2D40]">
           <div className="flex items-center gap-3">
-            <button className="flex items-center gap-1.5 text-[#94A3B8] text-xs hover:text-[#F1F5F9] transition-colors">
-              <FaGithub className="w-4 h-4" />
-              <span>Code</span>
-            </button>
+            {project.githubUrl ? (
+              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-[#94A3B8] text-xs hover:text-[#F1F5F9] transition-colors">
+                <FaGithub className="w-4 h-4" />
+                <span>Code</span>
+              </a>
+            ) : (
+              <button className="flex items-center gap-1.5 text-[#94A3B8] text-xs hover:text-[#F1F5F9] transition-colors">
+                <FaGithub className="w-4 h-4" />
+                <span>Code</span>
+              </button>
+            )}
             {project.demoUrl && (
               <a href={project.demoUrl} target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-[#94A3B8] text-xs hover:text-[#F1F5F9] transition-colors">
