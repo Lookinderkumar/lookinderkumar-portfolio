@@ -24,7 +24,7 @@ export const projects: Project[] = [
     description: 'Full dissertation investigating how XGBoost fraud detection models fail under adversarial attacks (FGSM, PGD, HopSkipJump) and how SHAP explanations invert under those attacks. Mapped to EU AI Act 2024 compliance.',
     techStack: ['Python', 'XGBoost', 'SHAP', 'IBM ART', 'Scikit-learn', 'Adversarial ML'],
     githubUrl: 'https://github.com/Lookinderkumar/fraud-xai-adversarial',
-    imageUrl: '/projects/project-adversarial-xai.png',
+    imageUrl: '/projects/adversarial_xai_fraud_poster.png',
     initial: 'A',
   },
   {
