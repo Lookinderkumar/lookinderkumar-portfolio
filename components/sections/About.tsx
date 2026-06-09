@@ -103,7 +103,7 @@ export default function About() {
             </h3>
             <div className="space-y-3">
               {bio.map((para, i) => (
-                <p key={i} className="text-[#94A3B8] text-xs leading-relaxed">{para}</p>
+                <p key={i} className="text-[#94A3B8] text-sm leading-relaxed">{para}</p>
               ))}
             </div>
           </motion.div>
