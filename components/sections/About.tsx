@@ -46,7 +46,7 @@ function CountUp({ target, suffix }: { target: number; suffix: string }) {
 export default function About() {
   return (
     <section id="about" className="py-16 bg-[#080D1A]">
-      <div className="max-w-5xl mx-auto px-8">
+      <div className="max-w-6xl mx-auto px-8">
 
         {/* Section Heading */}
         <motion.div

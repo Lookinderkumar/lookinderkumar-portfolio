@@ -123,7 +123,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-16 bg-[#080D1A]">
-      <div className="max-w-5xl mx-auto px-8">
+      <div className="max-w-6xl mx-auto px-8">
 
         {/* Section Heading */}
         <motion.div

@@ -62,7 +62,7 @@ function SkillCard({ category, skills, icon: Icon, index }: {
 export default function Skills() {
   return (
     <section id="skills" className="py-16 bg-[#080D1A]">
-      <div className="max-w-5xl mx-auto px-8">
+      <div className="max-w-6xl mx-auto px-8">
 
         {/* Section Heading */}
         <motion.div
