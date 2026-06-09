@@ -75,8 +75,8 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-1 h-full bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-6 text-center flex flex-col items-center justify-center hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(14,165,233,0.08)]"
           >
-            <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-gradient-to-br from-[#1a2744] via-[#2d1b69] to-[#3b0764] flex items-center justify-center border-2 border-[#0EA5E9]/40 shadow-[0_0_20px_rgba(14,165,233,0.15)]">
-              <span className="text-4xl sm:text-5xl font-bold font-display text-[#7DD3FC]">LK</span>
+            <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full border-2 border-[#0EA5E9]/40 shadow-[0_0_20px_rgba(14,165,233,0.15)] overflow-hidden">
+              <img src="/profile.png" alt="Lookinder Kumar" className="w-full h-full object-cover object-top" />
             </div>
             <p className="text-lg sm:text-xl font-bold font-display text-[#F1F5F9] mt-6">Lookinder Kumar</p>
             <p className="text-[#0EA5E9] text-sm sm:text-base mt-1.5">AI Engineer &amp; MSc Student</p>
