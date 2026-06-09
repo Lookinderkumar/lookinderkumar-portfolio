@@ -107,6 +107,11 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               className="text-[#0EA5E9] text-xs font-medium hover:text-[#38BDF8] transition-colors flex items-center gap-1">
               View Paper →
             </a>
+          ) : project.githubUrl ? (
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer"
+              className="text-[#0EA5E9] text-xs font-medium hover:text-[#38BDF8] transition-colors flex items-center gap-1">
+              Read More →
+            </a>
           ) : (
             <span className="text-[#0EA5E9] text-xs font-medium cursor-default">
               Read More →
