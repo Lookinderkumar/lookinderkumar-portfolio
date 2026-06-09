@@ -68,7 +68,7 @@ function BlogCard({ post, index }: { post: BlogPost; index: number }) {
         <Tag className="w-8 h-8 text-[#0EA5E9]/20" />
       </div>
       {/* Card body */}
-      <div className="p-6 flex flex-col flex-1">
+      <div className="p-4 flex flex-col flex-1">
         {/* Tags */}
         <div className="flex flex-wrap gap-1.5 mb-3">
           {post.tags.map((tag) => (
@@ -78,11 +78,11 @@ function BlogCard({ post, index }: { post: BlogPost; index: number }) {
           ))}
         </div>
         {/* Title */}
-        <h3 className="text-base font-bold font-display text-[#F1F5F9] mb-2 leading-snug flex-1">
+        <h3 className="text-sm font-bold font-display text-[#F1F5F9] mb-2 leading-snug flex-1">
           {post.title}
         </h3>
         {/* Excerpt */}
-        <p className="text-[#94A3B8] text-sm leading-6 mb-4 line-clamp-2">
+        <p className="text-[#94A3B8] text-xs leading-relaxed mb-4 line-clamp-3">
           {post.excerpt}
         </p>
         {/* Meta */}
@@ -96,7 +96,7 @@ function BlogCard({ post, index }: { post: BlogPost; index: number }) {
         {/* CTA */}
         <Link
           href={`/blog/${post.slug}`}
-          className="inline-flex items-center gap-1.5 text-[#0EA5E9] text-sm font-medium hover:text-[#38BDF8] transition-colors group"
+          className="inline-flex items-center gap-1.5 text-[#0EA5E9] text-xs font-medium hover:text-[#38BDF8] transition-colors group"
         >
           Read Article
           <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />

@@ -11,8 +11,8 @@ function SkillBar({ name, percentage, index }: { name: string; percentage: numbe
   return (
     <div ref={ref} className="mb-5 last:mb-0">
       <div className="flex justify-between items-center mb-1.5">
-        <span className="text-[#94A3B8] text-sm">{name}</span>
-        <span className="text-[#0EA5E9] text-sm font-mono">{percentage}%</span>
+        <span className="text-[#94A3B8] text-xs">{name}</span>
+        <span className="text-[#0EA5E9] text-xs font-mono">{percentage}%</span>
       </div>
       <div className="w-full h-1.5 bg-[#1E2D40] rounded-full overflow-hidden">
         <motion.div
@@ -46,7 +46,7 @@ function SkillCard({ category, skills, icon: Icon, index }: {
         <div className="w-10 h-10 rounded-xl bg-[#0EA5E9]/10 border border-[#0EA5E9]/20 flex items-center justify-center flex-shrink-0">
           <Icon className="w-5 h-5 text-[#0EA5E9]" />
         </div>
-        <h3 className="text-base font-bold font-display text-[#F1F5F9]">{category}</h3>
+        <h3 className="text-sm font-bold font-display text-[#F1F5F9]">{category}</h3>
       </div>
 
       {/* Skill Bars */}

@@ -61,7 +61,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         </h3>
 
         {/* Description */}
-        <p className="text-[#94A3B8] text-sm leading-6 mb-4 flex-1 line-clamp-3">
+        <p className="text-[#94A3B8] text-xs leading-relaxed mb-4 flex-1 line-clamp-3">
           {project.description}
         </p>
 
@@ -82,13 +82,13 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         {/* Footer actions */}
         <div className="flex items-center justify-between pt-4 border-t border-[#1E2D40]">
           <div className="flex items-center gap-3">
-            <button className="flex items-center gap-1.5 text-[#94A3B8] text-sm hover:text-[#F1F5F9] transition-colors">
+            <button className="flex items-center gap-1.5 text-[#94A3B8] text-xs hover:text-[#F1F5F9] transition-colors">
               <FaGithub className="w-4 h-4" />
               <span>Code</span>
             </button>
             {project.demoUrl && (
               <a href={project.demoUrl} target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-[#94A3B8] text-sm hover:text-[#F1F5F9] transition-colors">
+                className="flex items-center gap-1.5 text-[#94A3B8] text-xs hover:text-[#F1F5F9] transition-colors">
                 <ExternalLink className="w-4 h-4" />
                 <span>Demo</span>
               </a>
@@ -96,11 +96,11 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           </div>
           {project.paperUrl ? (
             <a href={project.paperUrl} target="_blank" rel="noopener noreferrer"
-              className="text-[#0EA5E9] text-sm font-medium hover:text-[#38BDF8] transition-colors flex items-center gap-1">
+              className="text-[#0EA5E9] text-xs font-medium hover:text-[#38BDF8] transition-colors flex items-center gap-1">
               View Paper →
             </a>
           ) : (
-            <span className="text-[#0EA5E9] text-sm font-medium cursor-default">
+            <span className="text-[#0EA5E9] text-xs font-medium cursor-default">
               Read More →
             </span>
           )}

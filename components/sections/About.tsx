@@ -65,7 +65,7 @@ export default function About() {
         </motion.div>
 
         {/* Two Column Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10 items-stretch">
 
           {/* LEFT — Profile Card */}
           <motion.div
@@ -73,7 +73,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-1 self-start bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-6 text-center flex flex-col items-center justify-center hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(14,165,233,0.08)]"
+            className="lg:col-span-1 h-full bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-6 text-center flex flex-col items-center justify-center hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(14,165,233,0.08)]"
           >
             <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-gradient-to-br from-[#1a2744] via-[#2d1b69] to-[#3b0764] flex items-center justify-center border-2 border-[#0EA5E9]/40 shadow-[0_0_20px_rgba(14,165,233,0.15)]">
               <span className="text-4xl sm:text-5xl font-bold font-display text-[#7DD3FC]">LK</span>
@@ -96,13 +96,15 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-2 bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-6 hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(14,165,233,0.08)]"
+            className="lg:col-span-2 h-full bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-6 hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(14,165,233,0.08)]"
           >
-            <h3 className="text-xl sm:text-2xl font-bold font-display text-[#F1F5F9] border-l-4 border-[#0EA5E9] pl-4 mb-6">
+            <h3 className="text-base font-bold font-display text-[#F1F5F9] border-l-4 border-[#0EA5E9] pl-4 mb-4">
               My Story
             </h3>
-            <div className="space-y-4">
-              <p className="text-[#94A3B8] text-sm leading-relaxed">{bio[0]}</p>
+            <div className="space-y-3">
+              {bio.map((para, i) => (
+                <p key={i} className="text-[#94A3B8] text-xs leading-relaxed">{para}</p>
+              ))}
             </div>
           </motion.div>
         </div>
@@ -120,8 +122,8 @@ export default function About() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-4 text-center hover:border-[#0EA5E9]/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)]"
               >
-                <Icon className="w-6 h-6 sm:w-7 sm:h-7 mx-auto text-[#0EA5E9] mb-3" />
-                <div className="text-3xl sm:text-3xl lg:text-4xl font-bold font-display text-[#0EA5E9]">
+                <Icon className="w-5 h-5 mx-auto text-[#0EA5E9] mb-2" />
+                <div className="text-2xl font-bold font-display text-[#0EA5E9]">
                   <CountUp target={stat.value} suffix={stat.suffix} />
                 </div>
                 <p className="text-[#94A3B8] text-xs sm:text-sm mt-2">{stat.label}</p>

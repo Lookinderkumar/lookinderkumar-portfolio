@@ -75,19 +75,19 @@ function TimelineItem({
         className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-5 mb-4 flex-1 hover:border-[#0EA5E9]/40 transition-all duration-300"
       >
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
-          <h3 className="text-base font-bold font-display text-[#F1F5F9]">{title}</h3>
-          <span className="text-xs text-[#94A3B8] border border-[#1E2D40] bg-[#0D1424] px-3 py-1 rounded-full whitespace-nowrap flex-shrink-0">
+          <h3 className="text-sm font-bold font-display text-[#F1F5F9]">{title}</h3>
+          <span className="text-xs text-[#94A3B8] border border-[#1E2D40] bg-[#0D1424] px-2 py-0.5 rounded-full whitespace-nowrap flex-shrink-0">
             {period}
           </span>
         </div>
-        <p className="text-[#0EA5E9] text-sm font-medium mb-3">{subtitle}</p>
+        <p className="text-[#0EA5E9] text-xs font-medium mb-2">{subtitle}</p>
         {detail && (
-          <p className="text-[#94A3B8] text-sm leading-6">{detail}</p>
+          <p className="text-[#94A3B8] text-xs leading-relaxed">{detail}</p>
         )}
         {points && (
-          <ul className="space-y-1.5 mt-1">
+          <ul className="space-y-1 mt-1">
             {points.map((point, i) => (
-              <li key={i} className="text-[#94A3B8] text-sm leading-6 flex gap-2">
+              <li key={i} className="text-[#94A3B8] text-xs leading-relaxed flex gap-2">
                 <span className="text-[#0EA5E9] mt-1.5 flex-shrink-0">›</span>
                 {point}
               </li>

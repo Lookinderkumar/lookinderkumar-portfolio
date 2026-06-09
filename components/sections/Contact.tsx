@@ -71,7 +71,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-[#94A3B8] text-xs mb-0.5">Email</p>
-                <a href="mailto:lookinderkumar2011@gmail.com" className="text-[#F1F5F9] text-sm font-medium hover:text-[#0EA5E9] transition-colors">
+                <a href="mailto:lookinderkumar2011@gmail.com" className="text-[#F1F5F9] text-xs font-medium hover:text-[#0EA5E9] transition-colors">
                   lookinderkumar2011@gmail.com
                 </a>
               </div>
@@ -84,7 +84,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-[#94A3B8] text-xs mb-0.5">Location</p>
-                <p className="text-[#F1F5F9] text-sm font-medium">Dublin, Ireland</p>
+                <p className="text-[#F1F5F9] text-xs font-medium">Dublin, Ireland</p>
               </div>
             </div>
 
@@ -96,7 +96,7 @@ export default function Contact() {
               <div>
                 <p className="text-[#94A3B8] text-xs mb-0.5">LinkedIn</p>
                 <a href="https://linkedin.com/in/lookinder-kumar" target="_blank" rel="noopener noreferrer"
-                  className="text-[#F1F5F9] text-sm font-medium hover:text-[#0EA5E9] transition-colors">
+                  className="text-[#F1F5F9] text-xs font-medium hover:text-[#0EA5E9] transition-colors">
                   /in/lookinder-kumar
                 </a>
               </div>
@@ -106,7 +106,7 @@ export default function Contact() {
             <div className="bg-[#0D1424] rounded-2xl border border-[#1E2D40] p-5 flex items-center justify-center">
               <div className="inline-flex items-center gap-2 rounded-full border border-[#0EA5E9]/30 bg-[#0EA5E9]/10 px-5 py-2">
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                <span className="text-[#0EA5E9] text-sm font-medium">Open to Opportunities</span>
+                <span className="text-[#0EA5E9] text-xs font-medium">Open to Opportunities</span>
               </div>
             </div>
           </motion.div>

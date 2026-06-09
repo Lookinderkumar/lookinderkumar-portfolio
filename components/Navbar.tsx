@@ -67,7 +67,7 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="/"
-            className="mr-auto font-bold text-xl lg:text-2xl bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] bg-clip-text text-transparent"
+            className="mr-auto font-bold text-lg bg-gradient-to-r from-[#0EA5E9] to-[#8B5CF6] bg-clip-text text-transparent"
           >
             LK
           </a>
