@@ -35,6 +35,8 @@ export const projects: Project[] = [
     featured: true,
     description: 'End-to-end pipeline detecting fraud in high-value cross-border SWIFT and SEPA transactions. Hybrid ML detection with SHAP-based reason codes, FastAPI serving, Kafka streaming, and live Streamlit dashboard.',
     techStack: ['Python', 'FastAPI', 'Kafka', 'XGBoost', 'SHAP', 'Streamlit'],
+    githubUrl: 'https://github.com/Lookinderkumar/fraud-xborder',
+    imageUrl: '/projects/swift_sepa_fraud_poster.png',
     initial: 'R',
   },
   {
