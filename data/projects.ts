@@ -46,6 +46,8 @@ export const projects: Project[] = [
     badge: 'Research Paper',
     description: 'IEEE-format research paper applying K-Means clustering, ARIMA forecasting, and country-level benchmarking to the European FinTech ecosystem. Forecasts funding stabilising at ~$241M/year.',
     techStack: ['Python', 'K-Means', 'ARIMA', 'Scikit-learn', 'Pandas', 'Streamlit'],
+    githubUrl: 'https://github.com/Lookinderkumar/fintech-market-intelligence',
+    imageUrl: '/projects/fintech-market-intelligence-poster.png',
     initial: 'F',
   },
   {
