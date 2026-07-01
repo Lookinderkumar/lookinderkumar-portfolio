@@ -56,6 +56,8 @@ export const projects: Project[] = [
     category: 'Data Engineering',
     description: 'Kappa-style big data architecture for Transport Infrastructure Ireland M50 traffic data. Emulates real-time streams from CSV, ingests to Apache Kafka, processes with PySpark Structured Streaming, persists to Cassandra.',
     techStack: ['Apache Kafka', 'PySpark', 'Cassandra', 'Python', 'Structured Streaming'],
+    githubUrl: 'https://github.com/Lookinderkumar/realtime-traffic-streaming-pipeline',
+    imageUrl: '/projects/streaming-pipeline-poster.png',
     initial: 'B',
   },
   {
