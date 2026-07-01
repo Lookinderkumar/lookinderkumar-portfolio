@@ -66,6 +66,8 @@ export const projects: Project[] = [
     category: 'Statistical ML',
     description: 'End-to-end data science pipeline in R on 50,000+ diamond records. Multiple linear regression (Adjusted R² = 0.9207). Cut quality classification: kNN (66%), C5.0 Decision Tree (76.14%), ANN (74.37%).',
     techStack: ['R', 'tidyverse', 'ggplot2', 'kNN', 'C5.0', 'ANN', 'R Markdown'],
+    githubUrl: 'https://github.com/Lookinderkumar/diamond-price-prediction',
+    imageUrl: '/projects/diamond-prediction-poster.png',
     initial: 'D',
   },
   {
